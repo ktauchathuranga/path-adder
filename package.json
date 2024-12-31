@@ -1,21 +1,53 @@
 {
   "name": "path-adder",
   "displayName": "Path Adder",
-  "description": "this is description",
+  "description": "A VS Code extension to add paths to your code easily with shortcuts.",
+  "publisher": "ashen-chathuranga",
   "version": "0.0.1",
+  "author": {
+    "name": "Ashen Chathuranga"
+    },
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": ["path", "file-picker", "path-adder", "relative-path", "absolute-path"],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#f2f0ef",
+    "theme": "light"
+  },
+  "pricing": "Free",
+  "activationEvents": [
+    "onCommand:path-adder.internalFilePicker",
+    "onCommand:path-adder.fileExplorer"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "path-adder.helloWorld",
-        "title": "Hello World"
+        "command": "path-adder.internalFilePicker",
+        "title": "Add Path (Internal Picker)"
+      },
+      {
+        "command": "path-adder.fileExplorer",
+        "title": "Add Path (File Explorer)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "path-adder.internalFilePicker",
+        "key": "ctrl+alt+i", 
+        "mac": "cmd+alt+i",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "path-adder.fileExplorer",
+        "key": "ctrl+alt+p",
+        "mac": "cmd+alt+p",
+        "when": "editorTextFocus"
       }
     ]
   },
@@ -37,5 +69,15 @@
     "typescript": "^5.7.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ktauchathuranga/path-adder/issues",
+    "email": "ktauchathuranga@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktauchathuranga/path-adder"
+  },
+  "homepage": "https://github.com/ktauchathuranga/path-adder/blob/main/README.md"
 }
