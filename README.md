@@ -1,4 +1,4 @@
-# Path Adder
+# <img src="images/icon.png" alt="Inline Cryptography Toolkit Icon" width="35" style="vertical-align:middle"/> Path Adder
 
 A Visual Studio Code extension to quickly insert file paths into your code with customizable options such as relative or absolute paths, forward or backward slashes, and quote styles (single, double, or none). This extension streamlines your development process, saving you time by allowing you to easily insert file paths in various formats directly within the editor.
 
