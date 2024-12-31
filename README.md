@@ -1,71 +1,110 @@
-# path-adder README
+# Path Adder
 
-This is the README for your extension "path-adder". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+A Visual Studio Code extension to quickly insert file paths into your code with customizable options such as relative or absolute paths, forward or backward slashes, and quote styles (single, double, or none). This extension streamlines your development process, saving you time by allowing you to easily insert file paths in various formats directly within the editor.
 
 ---
 
-## Following extension guidelines
+<img src="images/demo.gif" alt="Demo of Path Adder" width="100%" style="border: 1px solid #ccc; border-radius: 4px;"/> 
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+---
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## Features
 
-## Working with Markdown
+- **Internal File Picker**: Browse through your workspace files and insert their paths with your preferred format.
+- **File Explorer Integration**: Use the file explorer to select files and insert paths into your code.
+- **Path Type Customization**: Choose between absolute or relative file paths.
+- **Slash Direction**: Select between forward slashes (`/`) or backward slashes (`\`).
+- **Quote Style Options**: Wrap paths in double quotes (`""`), single quotes (`''`), or no quotes at all.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+---
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## Installation
 
-## For more information
+1. Open **Visual Studio Code**.
+2. Go to the **Extensions View** by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for **Path Adder** in the marketplace search bar.
+4. Click **Install**.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+---
 
-**Enjoy!**
+## Usage
+
+### Commands
+
+Once the extension is installed, the following commands will be available:
+
+1. **Internal File Picker**  
+   Opens a file picker for selecting files from your workspace, with options for customizing the file path format.
+
+   - Command: `Path Adder: Internal File Picker`
+
+2. **File Explorer**  
+   Opens the native file explorer to select a file and inserts its path into your code with customizable options.
+
+   - Command: `Path Adder: File Explorer`
+
+### Workflow
+
+1. **Internal File Picker**:  
+   - Trigger the command to open the file picker.
+   - Select a file from your workspace.
+   - Choose the path format (relative or absolute).
+   - Select the slash direction (forward or backward).
+   - Choose the quote style (single, double, or none).
+   - The file path is inserted at your cursor position.
+
+2. **File Explorer**:  
+   - Trigger the file explorer command to browse your system.
+   - Select a file and choose the same options for path format, slash direction, and quote style.
+   - The file path is inserted at your cursor position.
+
+---
+
+## Configuration
+
+The extension currently supports the following options:
+
+- **Slash Direction**:  
+  - Choose between forward slashes (`/`) or backward slashes (`\`).
+  
+- **Path Type**:  
+  - Select between relative and absolute paths.
+
+- **Quote Style**:  
+  - No quotes (`""`, `''`), or with single or double quotes.
+
+---
+
+## Keybindings
+
+- **Internal File Picker**:  
+  - Windows/Linux: `Ctrl+Alt+I`  
+  - macOS: `Cmd+Alt+I`
+  
+- **File Explorer**:  
+  - Windows/Linux: `Ctrl+Alt+P`  
+  - macOS: `Cmd+Alt+P`
+
+You can modify these keybindings in the **Keyboard Shortcuts** menu in VS Code.
+
+---
+
+## Contributing
+
+We welcome contributions! If you'd like to help improve this extension, please fork the repository and submit a pull request. Here are some ways you can contribute:
+
+- Bug reports and feature requests
+- Code improvements or documentation
+
+---
+
+## License
+
+This extension is licensed under the [MIT License](LICENSE).
+
+---
+
+## Changelog
+
+### 0.0.1
+- Initial release with support for internal file picker, file explorer, and customizable path formats.
