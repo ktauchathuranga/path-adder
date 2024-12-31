@@ -108,3 +108,6 @@ This extension is licensed under the [MIT License](LICENSE).
 
 ### 0.0.1
 - Initial release with support for internal file picker, file explorer, and customizable path formats.
+
+### 0.0.2
+- icon and doc patch
