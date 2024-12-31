@@ -3,7 +3,7 @@
   "displayName": "Path Adder",
   "description": "A VS Code extension to add paths to your code easily with shortcuts.",
   "publisher": "ashen-chathuranga",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Ashen Chathuranga"
     },
